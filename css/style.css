@@ -263,34 +263,77 @@ section.destaque .destaque-header {
 }
 
 .vitrinevenda-filter .slider {
+    position: relative;
     width: 100%;
     height: 50px;
-    background-color: gray;
     margin-bottom: 50px;
+}
+
+.slider .filter-price {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+    border-radius: 200px;
+    margin-bottom: 5px;
+}
+
+.slider .filter-price-in {
+    width: 90px;
+    height: 20px;
+    background-image:linear-gradient(to bottom,  rgb(243, 149, 105),  rgb(234, 52, 52));
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider .filter-price-cursor {
+    width: 15px;
+    height: 26px;
+    background-image: linear-gradient(to bottom, white, rgb(211, 211, 211));
+    position: absolute;
+    top: -3px;
+    left: 75px;
+    border-radius: 8px;
     cursor: grab;
 }
 
-.vitrinevenda-filter .slider:active {
+.slider .filter-price-cursor:active {
     cursor: grabbing;
+}
+
+.slider .price-from {
+    font-size: 12px;
+    display: block;
+    float: left;
+}
+
+.slider .price-to {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    display: right;
 }
 
 .filter-icon {
     display: none;
     cursor: pointer;
     width: 250px;
-    height: 40px;
+    height: 30px;
     background-image: url('../images/filtericon.png');
-    background-size: 40px;
+    background-size: 30px;
     background-repeat: no-repeat;
     margin-top: 132px;
     position: fixed;
-    width: 40px;
+    width: 30px;
     
 }
 
 
 .vitrinevenda-filter2 {
     display: none;
+    border: 1px solid red;
     width: 250px;
     height: 100%;
     font-style: italic;
@@ -309,16 +352,12 @@ section.destaque .destaque-header {
 }
 
 .vitrinevenda-filter2 .slider {
-    background-color: white;
+    position: relative;
     width: 100%;
-    height: 50px;
-    background-color: gray;
-    cursor: grab;
+    background-color: white;
+    padding-right: 8px;
 }
 
-.vitrinevenda-filter2 .slider:active {
-    cursor: grabbing;
-}
 
 .vitrinevenda-filter2 .decades-wrapper {
     background-color: white;
@@ -872,3 +911,4 @@ footer {
         margin-right: 60px;
     }
 }
+
