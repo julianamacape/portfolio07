@@ -211,11 +211,13 @@ section.destaque .destaque-header {
 .vitrinevenda {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 150px 10px 50px 10px;
+    padding: 117px 10px 50px 10px;
 }
 
 .vitrinevenda-header {
     width: 100%;
+    background-color: white;
+    position: fixed;
 }
 
 .vitrinevenda-line {
@@ -247,10 +249,11 @@ section.destaque .destaque-header {
 }
 
 .vitrinevenda-filter {
+    position: fixed;
     width: 250px;
     height: 100%;
     font-style: italic;
-    padding: 0 8px;
+    padding: 180px 8px 0 8px;
 }
 
 .vitrinevenda-filter h3 {
@@ -264,10 +267,72 @@ section.destaque .destaque-header {
     height: 50px;
     background-color: gray;
     margin-bottom: 50px;
+    cursor: grab;
+}
+
+.vitrinevenda-filter .slider:active {
+    cursor: grabbing;
+}
+
+.filter-icon {
+    display: none;
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    background-image: url('../images/filtericon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    margin-top: 132px;
+    position: fixed;
+    width: 40px;
+    
+}
+
+
+.vitrinevenda-filter2 {
+    display: none;
+    width: 250px;
+    height: 100%;
+    font-style: italic;
+    padding: 52px 8px 0 8px;
+}
+
+.vitrinevenda-filter2 h3 {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+#filteryear {
+    padding-top: 50px;
+}
+
+.vitrinevenda-filter2 .slider {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    cursor: grab;
+}
+
+.vitrinevenda-filter2 .slider:active {
+    cursor: grabbing;
+}
+
+.vitrinevenda-filter2 .decades-wrapper {
+    background-color: white;
+    padding: 0 0 20px 10px;
+}
+
+.decades-wrapper input {
+    cursor: pointer;
 }
 
 .vitrinevenda-carros {
-    width: Calc(100% - 250px);
+    
+    padding: 180px 0 0 250px;
+    width: 100%;
     height: 100%;
 }
 
@@ -526,6 +591,27 @@ footer {
     .depoimentos-content {
         margin: 30px auto;
         padding: 30px;
+    }
+
+    .vitrinevenda-filter {
+        display: none;
+    }
+
+    .vitrinevenda-carros {
+        padding: 180px 0 0 0;
+    }
+
+    .filter-icon {
+        display: block;
+    }
+
+    .filter-icon:hover .vitrinevenda-filter2 {
+        display: block;
+        transition: 2s;
+    }
+
+    .vitrinevenda-filter2:hover {
+        cursor: default;
     }
 }
 
