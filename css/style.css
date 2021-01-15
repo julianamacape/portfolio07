@@ -188,13 +188,18 @@ section.destaque .destaque-header {
 .destaquecarro-text button {
     margin: 10px 0;
     background-color: #fd4834;
-    color: white;
     border: none;
     font-size: 18px;
     padding: 5px;
     cursor: pointer;
+    color: white;
     border-bottom: 1.5px solid #8b2419;
     border-right: 1.5px solid #8b2419;
+}
+
+.destaquecarro-text button a {
+    text-decoration: none;
+    color: white;
 }
 
 .destaquecarro-text button:active {
@@ -205,6 +210,55 @@ section.destaque .destaque-header {
 }
 
 .destaquecarro-text button:focus {
+    outline: none;
+}
+
+.item-venda {
+    display: flex;
+    max-width: 800px;
+    margin: 160px auto 0 auto;
+    height: 60%;
+    padding-left: 2%;
+}
+
+.item-venda-img {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.item-venda-img img {
+    width: 100%;
+}
+
+.item-venda-descr {
+    width: 30%;
+    font-style: italic;
+}
+
+.item-venda-descr p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.item-venda-descr button {
+    margin: 10px 0;
+    background-color: #fd4834;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1.5px solid #8b2419;
+    border-right: 1.5px solid #8b2419;
+}
+
+.item-venda-descr button:active {
+    border-bottom: none;
+    border-right: none;
+    border-top: 1.5px solid #8b2419;
+    border-left: 1.5px solid #8b2419;
+}
+
+.item-venda-descr button:focus {
     outline: none;
 }
 
@@ -251,7 +305,7 @@ section.destaque .destaque-header {
 .vitrinevenda-filter {
     position: fixed;
     width: 250px;
-    height: 100%;
+    height: 400px;
     font-style: italic;
     padding: 180px 8px 0 8px;
 }
@@ -265,7 +319,7 @@ section.destaque .destaque-header {
 .vitrinevenda-filter .slider {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 25px;
     margin-bottom: 50px;
 }
 
@@ -333,7 +387,6 @@ section.destaque .destaque-header {
 
 .vitrinevenda-filter2 {
     display: none;
-    border: 1px solid red;
     width: 250px;
     height: 100%;
     font-style: italic;
@@ -357,7 +410,6 @@ section.destaque .destaque-header {
     background-color: white;
     padding-right: 8px;
 }
-
 
 .vitrinevenda-filter2 .decades-wrapper {
     background-color: white;
@@ -652,6 +704,10 @@ footer {
     .vitrinevenda-filter2:hover {
         cursor: default;
     }
+
+    .item-venda {
+        margin: 200px auto 0 auto;
+    }
 }
 
 @media screen and (max-width: 740px) {
@@ -784,6 +840,11 @@ footer {
     .vitrinevenda-title h2 {
         font-size: 27px;
     }
+
+    .item-venda {
+        margin: 140px auto 0 auto;
+
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -842,6 +903,24 @@ footer {
 
     form textarea {
         height: 150px;
+    }
+
+    .item-venda {
+        display: block;
+        margin: 140px auto 0 auto;
+        height: unset;
+        padding: 2%;
+    }
+
+    .item-venda-img {
+        width: 80%;
+        margin-right: unset;
+        margin: 0 auto;
+    }
+
+    .item-venda-descr {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -911,4 +990,3 @@ footer {
         margin-right: 60px;
     }
 }
-
