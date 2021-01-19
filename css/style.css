@@ -960,7 +960,7 @@ footer {
 
     .depoimentos-content {
         padding: 10px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .depoimentos-content h2, .depoimentos-content blockquote {
