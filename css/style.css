@@ -247,7 +247,7 @@ section.destaque .destaque-header {
     cursor: pointer;
 }
 
-.arrowup {
+.item-venda-gallery .arrowup {
     width: 100%;
     background-image: url('../images/arrowup.png');
     background-size: 30%;
@@ -257,7 +257,7 @@ section.destaque .destaque-header {
     cursor: pointer;
 }
 
-.arrowdown {
+.item-venda-gallery .arrowdown {
     width: 100%;
     background-image: url('../images/arrowdown.png');
     background-size: 30%;
@@ -578,16 +578,16 @@ section.destaque .destaque-header {
     cursor: pointer;
 }
 
-.arrowleft, .arrowright {
+.arrows .arrowleft, .arrows .arrowright {
     display: inline-block;
     margin: 0 10px;
 }
 
-.arrowright:active, .arrowleft:active {
+.arrows .arrowright:active, .arrows .arrowleft:active {
     opacity: 50%;
 }
 
-.arrowleft img, .arrowright img {
+.arrows .arrowleft img, .arrows .arrowright img {
     width: 10px;
 }
 
@@ -1025,7 +1025,7 @@ footer {
         cursor: pointer;
     }
 
-    .arrowleft {
+    .item-venda-gallery2 .arrowleft {
         display: block;
         width: 20px;
         background-image: url(../images/arrowleft.png);
@@ -1040,7 +1040,7 @@ footer {
         transform: translateY(-50%);
     }
 
-    .arrowright {
+    .item-venda-gallery2 .arrowright {
         display: block;
         width: 20px;
         background-image: url(../images/arrowright.png);
